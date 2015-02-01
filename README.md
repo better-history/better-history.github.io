@@ -1,2 +1,4 @@
-# site
-Website for Better History
+betterhistory.net
+=================
+
+The source for betterhistory.net

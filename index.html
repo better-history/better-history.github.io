@@ -52,7 +52,7 @@
       <h2 class="animated fadeInDown">The best history manager for Chrome</h2>
       <p style="width: 500px; margin: auto;">A better look at your browsing history. The best searching, the sharpest interface, and the most useful filters - for your history.</p>
       <br />
-      <a class='install' onclick='installExtension()' href="#">Install now for <strong>FREE</strong></a>
+      <a class='install' onclick='chrome.webstore.install(()' href="#">Install now for <strong>FREE</strong></a>
       <div style="padding-top: 10px;">
         or <a href="https://chrome.google.com/webstore/detail/better-history/obciceimmggglbmelaidpjlmodcebijb" target="_blank">learn more</a>
       </div>
@@ -84,15 +84,6 @@
             arrows: true
           });
         });
-
-        // Function that allows the extension to be installed inline. This can only be
-        // used in a click handler.
-        function installExtension() {
-          chrome.webstore.install(undefined, function() {
-            bodyEl = document.getElementsByTagName('body')[0];
-            bodyEl.className = bodyEl.className + 'installed';
-          }, undefined);
-        }
       </script>
     </div>
   </body>
